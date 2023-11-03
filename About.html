@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Eyes.png">
+    <script src="Main.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap">
+</head>
+<body>
+    <header>
+        <a href="Home_Portfolio.html">
+            <img src="Eyes.png" alt="Eyes" class="floating-image">
+        </a> <!-- Make sure to close the anchor tag properly -->
+        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="3DModeling.html">3D Modeling</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Design.html">Design</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="UIUX.html">UI/UX Design</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="About.html">About Me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <h1 style="font-family: 'Poppins'; color: #252525; font-size: 50px;">ABOUT</h1>
+
+    <style>
+/* Add your custom CSS styles here */
+body {
+    font-family: Poppins, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 32px;
+    top: 80px;
+    left: 30px;
+    position: absolute;
+    color: #252525;
+
+}
+
+h2 {
+    font-size: 28px;
+    top: 620px;
+    left: 30px;
+    position: absolute;
+    color: #252525;
+}
+
+.container {
+    max-width: 800px;
+    top: 180px;
+    margin: 10px auto;
+    padding: 20px;
+    left: 30px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(255, 51, 143, 0.4);
+    width: 400px; /* Fixed width for the square-like shape */
+    height: 380px; /* Fixed height for the square-like shape */
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.75; /* Adjust the line height for spacing */
+}
+
+img.img-headshot {
+    max-width: 400px;
+    float: left;
+    position: absolute;
+    top: 5px; /* Adjust this value to position the image vertically */
+    left: 900px; /* Adjust this value to position the image horizontally */
+}
+
+/* Add the custom shake animation */
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateZ(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateZ(0);
+    }
+}
+
+/* Apply the animation to the image with class "img-headshot" */
+.img-headshot.shake {
+    animation: shake 2s infinite;
+}
+
+.floating-image3 {
+  animation: floatUpDown 2.5s infinite; /* Adjust the duration as needed */
+  float: left;
+    position: absolute;
+    top: 100px; /* Adjust this value to position the image vertically */
+    left: 1020px; /* Adjust this value to position the image horizontally */
+}
+
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateY(10px); /* Adjust the vertical movement distance */
+  }
+}
+/* Adjust the position for each star */
+.floating-image3:nth-child(1) {
+    top: 200px;
+    left: 400px;
+}
+
+/* Duplicate the above block for each star and adjust top and left values */
+.floating-image3:nth-child(2) {
+    top: 600px;
+    left: 900px;
+}
+
+/* Duplicate the above block for each star and adjust top and left values */
+.floating-image3:nth-child(3) {
+    top: 600px;
+    left: 1020px;
+}
+
+
+    </style>
+<!-- Div Class for Container with About Info -->
+    <div class="container">
+        <p>Hi! I'm Cristy Aguilar!<br><br> I’m a Bay Area designer focusing on UI/UX design, graphic design, and 3D modeling!
+            <br><br>My interest and love for art began as a child (as is the case for most artists). I’m a current student at
+            San Jose State University, pursuing my BFA in Digital Media Art.
+            <br><br>Thanks for looking at my website!</p>
+        <!-- Add alt attribute for accessibility -->
+        <img src="Cristy.JPG" class="img-headshot shake" alt="Cristy Aguilar">
+      </div>
+
+<!-- Div Class w/ Social Media Icons -->
+    <div class="icons">
+    <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/cristy-aguilar-b99aa219a/">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a></li>
+  <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/cristya_art/?next=%2F">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a></li>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</div>
+<br><br>
+<img src="GradientHeart.png" alt="GradientHeart" class="floating-image3">
+<img src="Gradient Heart 2.png" alt="GradientHeart" class="floating-image3">
+<img src="Gradient Heart 3.png" alt="GradientHeart" class="floating-image3">
+<h2> Contact Me</h2>
+  </body>
+</html>
