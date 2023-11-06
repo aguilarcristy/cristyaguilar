@@ -1,5 +1,5 @@
 header {
-  background-color: #ff69b4;
+  background-color: #FFA3CC;
   text-align: center;
 }
 
@@ -14,7 +14,7 @@ header img {
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(45deg, rgb(255, 255, 255), rgb(255, 255, 255));
+  background: rgb(255, 255, 255);
   font-family: Arial, sans-serif;
   color: #252525;
 }
@@ -70,12 +70,6 @@ nav a:hover {
     transform: translateY(10px); /* Adjust the vertical movement distance */
   }
 }
-/* PARAGRAPH FONT STYLE */
-/* p {
-  font-size: 18px;
-  font-family: 'Poppins';
-  line-height: 1.75;
-} */
 
 img {
   max-width: 100%;
@@ -98,7 +92,7 @@ img {
 }
 
 /* ANIMATED HEADER ON MAIN. NOT WORKING */
-.animated-header {
+/* .animated-header {
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
@@ -113,13 +107,13 @@ img {
     top: 80px;
     left: 60px;
     position: absolute;
-    /* background-image: linear-gradient(-275deg, #fc38bb 10%, rgb(255, 105, 250) 45%, #f34fca 10%, #fa80db 100%);
+    background-image: linear-gradient(-275deg, #fc38bb 10%, rgb(255, 105, 250) 45%, #f34fca 10%, #fa80db 100%);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: textclip 3s linear infinite; */
-}
+    animation: textclip 3s linear infinite;
+} */
 
 @keyframes textclip {
   to {
@@ -143,15 +137,15 @@ img {
 }
 
 .footer {
-  position: relative;
+  position: fixed;
   width: 100%;
-  background: #ff35dd;
-  min-height: 100px;
-  padding: 20px 50px;
+  background: #FFA3CC;
+  padding: 20px 0; /* Adjust the padding as needed */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  bottom: 0; /* Place the footer at the bottom of the viewport */ 
 }
 
 .social-icon,
