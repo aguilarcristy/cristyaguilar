@@ -7,38 +7,66 @@
     <link rel="icon" type="image/x-icon" href="Eyes.png">
     <script src="Main.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap">
-</head>
+
+  </head>
 <body>
     <header>
-        <a href="index.html">
-            <img src="Eyes.png" alt="Eyes" class="floating-image">
-        </a> <!-- Make sure to close the anchor tag properly -->
-        <nav class="navbar navbar-expand-sm bg-light navbar-light">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="3DModeling.html">3D Modeling</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Design.html">Design</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="UIUX.html">UI/UX Design</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="About.html">About Me</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <h1 style="font-family: 'Poppins'; color: #252525; font-size: 50px;">ABOUT</h1>
+      <a href="index.html">
+        <img src="Eyes.png" alt="Eyes" class="floating-image">
+    </a>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+        </li>  
+          <li class="nav-item">
+                <a class="nav-link" href="3DModeling.html">3D Modeling</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Design.html">Design</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="UIUX.html">UI/UX Design</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="About.html">About Me</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<h1 style="font-family: 'Poppins'; color: #252525; font-size: 50px;">ABOUT</h1>
 <style>
 /* Add your custom CSS styles here */
 
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
+}
+
+/* @media only screen and (min-width: 992px) {
+  body {
+    font-size: 16px;
+    width: 80%;
+    margin: auto;
+  }
+ */
+
+/* styles for tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: 14px;
+    width: 90%;
+    margin: auto;
+  }
+}
+
+/* styles for mobile devices */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 12px;
+    width: 100%;
+    margin: 0;
+  }
 }
 body {
     font-family: Poppins, sans-serif;
@@ -119,32 +147,22 @@ img.img-headshot {
     transform: translateY(10px); /* Adjust the vertical movement distance */
   }
 }
-/* Adjust the position for each star */
-.floating-image3:nth-child(1) {
-    top: 200px;
-    left: 600px;
-}
 
-/* Duplicate the above block for each star and adjust top and left values */
-.floating-image3:nth-child(3) {
-    top: 900px;
-    left: 1020px;
-}
 
 </style>
 <img src="Cristy.JPG" class="img-headshot shake" alt="Cristy Aguilar">
 
 <!-- Div Class for Container with About Info -->
-    <div class="container">
+<div class="container">
         
         <p>Cristy Aguilar is a multi disciplinary designer from the Bay Area. <br><br>
         Focusing on UIUX design, graphic design, and illustration, she
         works with softwares such as Figma, Adobe Illustrator, Adobe Photoshop, and Blender to create designs ranging from
         advertisements to websites, as well as 3D models.</p>
         <br> She has previous experience as a gallery intern, social media coordinator, and art instructor. She has also assisted 
-        in grant writing for art nonprofits.
+        in grant writing for art nonprofits.      </div>
+
         <!-- Add alt attribute for accessibility -->
-      </div>
 
 <!-- Div Class w/ Social Media Icons -->
     <div class="icons">
@@ -164,16 +182,16 @@ img.img-headshot {
 <h2> Cover Letter</h2>
 <p1> Click <a href ="CristyAguilarResume (2).pdf" target="_blank">here</a> to view Cristy Aguilar's cover letter. </p1>
 <h2> Artist Statement</h2>
-<p>Click here to view Cristy Aguilar's artist statement</p>
+<p>Click <a href ="Artist Statement - Cristy Aguilar.pdf" target="_blank">here</a> to view Cristy Aguilar's artist statement</p>
 <br>
 <br>
 <br>
 <br>
 </div>
-<img src="GradientHeart.png" alt="GradientHeart" class="floating-image3">
+<!-- <img src="GradientHeart.png" alt="GradientHeart" class="floating-image3">
 <img src="Gradient Heart 2.png" alt="GradientHeart" class="floating-image3">
-<img src="Gradient Heart 3.png" alt="GradientHeart" class="floating-image3">
+<img src="Gradient Heart 3.png" alt="GradientHeart" class="floating-image3"> -->
 <div class = "footer"></div>
 
-  </body>
+</body>
 </html>
