@@ -34,8 +34,8 @@
                 </ul>
             </nav>
         </header>
-        <h1 style="font-family: 'Poppins'; color: #252525; font-size: 50px;">UI/UX</h1>
-        <p>Case Studies Coming Soon!<br> SJSU Portal Redesign Study with Hanbee Cho</p>
+        <h1 style="font-family: 'Poppins'; color: #252525; font-size: 50px;">UI/UX Design</h1>
+        <p>Case Studies Coming Soon<br> SJSU Portal Redesign Case Study with Hanbee Cho</p>
         <div class="container">
             <div class="data">
                 <div class="images">
@@ -49,6 +49,25 @@
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+
+/* styles for tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: 14px;
+    width: 80%;
+    margin: auto;
+  }
+}
+
+/* styles for mobile devices */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 12px;
+    width: 100%;
+    margin: 0;
+  }
+}
+
 
         /* Add your custom CSS styles here */
     h1 {
@@ -70,7 +89,7 @@
     top: 70px;
     left: 1020px;
     padding-right: 50px;
-    max-width: 450px;
+    max-width: 400px;
     position: relative;
     color: #252525;
     font-family: 'Poppins';
@@ -78,7 +97,7 @@
         }
 
 
-        .images {
+.images {
             width: 600px; /* Adjust the width as needed */
             height: auto;
             align-items: left;
@@ -89,7 +108,17 @@
 
         }
     </style>
-
+<!-- Div Class w/ Social Media Icons -->
+<div class="icons">
+    <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/cristy-aguilar-b99aa219a/">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a></li>
+  <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/cristya_art/?next=%2F">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a></li>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</div>
     <!-- Rest of your HTML content -->
 </body>
 <div class="footer"></div>
