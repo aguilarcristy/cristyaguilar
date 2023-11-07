@@ -59,42 +59,46 @@ have been created in different dimensions for advertising purposes, while other 
 
 <br>
 <br>
+<div class="personal-works">
+  <h2>Personal Works</h2>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="personal">
+      <img class="images" src="AprendeACocinarPoster.jpg" alt="Plates in Your Face (2023)">
+      <img class="images" src="LibraSeason.jpg" alt="Libra (2023)">
+      <!-- Add more image elements as needed -->
+  </div>
+<br>
+<br>
 
-<script>
-  let slideIndex = 0;
-  showSlides();
-  
-  function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
-  }
-  </script>
 <style>
-  /* Container for Text & Images */
+  /* Container for RHA Text & Images */
   .container {
             display: flex;
             flex-direction: row;
             align-items: left;
             justify-content: space-between;
-            padding: 5px;
-            /* top: 60px; */
-            padding-top: 40px;
+            padding: 1px;
+            /* padding-top: 40px; */
             padding-left: 40px;
 
         }
+/* Container for Personal Text & Images */
 
+.personal {
+            display: flex;
+            flex-direction: row;
+            align-items: left;
+            justify-content: space-between;
+            padding: 5px;
+            height: auto;
+            /* top: 60px; */
+            /* padding-top: 40px; */
+            padding-left: 40px;
+
+        }
 .text-container {
             display: flex;
             flex-direction: row;
@@ -172,7 +176,6 @@ img {vertical-align: left;}
   bottom: 140px;
   left: 60px;
 }
-
 /* Caption text */
 .text {
   color: #252525;
@@ -192,7 +195,21 @@ img {vertical-align: left;}
   position: relative;
   top: 60;
 }
-    </style>
+
+h2{
+  font-size: 24px;
+  text-align: left;
+    padding-left: 50px;
+    max-width: 3000px;
+    position: absolute;
+    color: #252525;
+    font-family: 'Poppins';
+    line-height: 1.5;
+    flex: 1;
+}
+
+</style>
+
     <!-- Div Class w/ Social Media Icons On Nav Bar -->
     <div class="icons">
       <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/cristy-aguilar-b99aa219a/">
