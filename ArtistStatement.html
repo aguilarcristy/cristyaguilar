@@ -53,17 +53,14 @@
     position: absolute;
     top: 100px; /* Adjust this value to position the image vertically */
     right: 1220px; /* Adjust this value to position the image horizontally */
-    width: 10%;
-
 }
 
 .floating-image3{
-    animation: floatUpDown 2.5s infinite; /* Adjust the duration as needed */
-    float: left;
+animation: floatUpDown 2.5s infinite; /* Adjust the duration as needed */
+  float: left;
     position: absolute;
     top: 450px; /* Adjust this value to position the image vertically */
     left: 1220px; /* Adjust this value to position the image horizontally */
-    width: 10%;
 }
 
 /* Floating Icon & Home Button Movement*/
@@ -96,8 +93,8 @@ img {
   }
 }
 
-
-.footer {
+/* OG FOOTER */
+/* .footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -106,7 +103,16 @@ img {
     background-color: #FFA3CC;
     color: white;
     text-align: center;
-  }
+  } */
+
+/* NEW CHAT GPT FOOTER */
+.footer {
+            width: 100%;
+            height: 10px;
+            background-color: #FFA3CC;
+            color: white;
+            text-align: center;
+        }
 
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
@@ -127,6 +133,33 @@ img {
     width: 100%;
     margin: 0;
   }
+}
+
+.container {
+    max-width: 1200px; /* Adjust the max-width to your preference */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px;
+    top: 40px;
+    position: relative;
+    background-color: #ffff;
+    border-radius: 50px;
+    box-shadow: 0 0 30px rgba(255, 51, 143, 0.4);
+    width: 100%;
+    height: auto; /* Adjust the height as needed, or remove it for dynamic height */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    justify-content: center; /* Center the content vertically */
+}
+
+p {
+    font-size: 16px;
+    text-align: center;
+    max-width: 1900px;
+    color: #252525;
+    font-family: 'Poppins';
+    line-height: 2.00;
+    margin: 0; /* Remove default margin to avoid extra space */
 }
 
     </style>
@@ -159,12 +192,35 @@ img {
         </ul>
     </nav>
     </header>
-<h1 style="font-family: 'Poppins'; color: #ff69b4; font-size: 140px; top: 60px; text-align: center; max-width: 1920px; line-height: 1.00; position:relative;">CRISTY AGUILAR</h1>
-<img src="Star1.png" alt="GradientStar" class="floating-image2">
+<h1 style="font-family: 'Poppins'; color: #ff69b4; font-size: 40px; top: 20px; text-align: center; max-width: 1920px; line-height: 1.00; position:relative;">Artist Statement</h1>
+<!-- <img src="Star1.png" alt="GradientStar" class="floating-image2">
 <img src="Star1.png" alt="GradientStar" class="floating-image3">
-<img src="Star1.png" alt="GradientStar" class="floating-image3">
-<p style = "font-family: 'Poppins'; color: #ff69b4; font-size: 25px; text-align: center; max-width: 1920px; top:20px; line-height: 0.25; position:relative;"> Multi Media Designer & Artist </p>
-
+<img src="Star1.png" alt="GradientStar" class="floating-image3"> -->
+<div class="container">
+<p>To be human is to have the desire to learn, help, and admire and to create art is to have all
+    of these human qualities. They are intertwined with one another.
+    To love art is to learn and admire.
+    As an artist and designer, my goal is to create. Creation and its purposes can vary, and in
+    this lifetime, I wish to create visuals and pieces that resonate with audiences - whether or
+    not their experiences in life are akin to mine.
+    <br><br>These visuals are inspired by the ultra-feminine. By pink and aesthetics that have been
+    deemed girly, Barbie-esque in a sense, and there is a reason for that.
+    Above all things, I am a Mexican American woman navigating a world where adulthood
+    has approached me, but I am still reminiscing and enjoying the aesthetics of my girlhood,
+    greatly influenced by my upbringing and life as an eldest daughter in an immigrant
+    Mexican family.
+    <br><br>
+    This girlhood is present in my personal designs, whereas my less personal works created
+    for others are modern and inspired by current design and art trends. Personally, my
+    aesthetics are playful, vibrant, and clean.<br><br>
+    In other areas of my life as an artist, I think of others. How will people navigate and
+    perceive this design? Is this easy to understand? These are questions present when I
+    design graphics and user interfaces that I hope allow me to flourish as a designer.
+    These wishes and aspirations of being a part of the world of design rose and bloomed
+    from my desire to create. To be a designer that helps and to be an artist who creates
+    something worth learning and admiring.
+    </p>
+</div>
 <!-- <div class = "p1"> Multi Media Designer & Artist</p1></div> -->
 <div class="icons">
   <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/cristy-aguilar-b99aa219a/">
@@ -176,6 +232,8 @@ img {
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </div>
+<br>
+<br>
   <div class="footer"></div>
 </body>
 </html>
