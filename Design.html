@@ -37,20 +37,11 @@
             </ul>
         </nav>
     </header>
-      <!-- GRID STYLE IMAGES BEING CALLED & SOURCED -->
-<!-- <div class = "container">
-  <div class="data">
-    <img class="images" src="BowlingGraphic.png"></img>
-    <img class="images" src="RHAPaintingandSucculents.jpg"></img>
-    <img class="images" src="RHASticker.JPG"></img>
-    <img class="images" src="JoinRHAIG.png"></img>
-    <img class="images" src="SelfCare_IG.png"></img>
-    <img class="images" src="RHA TOWN HALL IG-01.png"></img>
-</div> -->
+
 <div class="slideshow-container">
   <div class="mySlides fade">
       <div class="numbertext">1 / 6</div>
-      <img src="BowlingGraphic.png" alt = "Bowling Night" style="width:50%">
+      <img src="BowlingGraphic.png" alt = "Bowling Night" style="width:40%">
       <div class="text"> "Bowling Night"<br>Made in Adobe Illustrator</div>
   </div>
 
@@ -68,28 +59,36 @@
 
 <div class="mySlides fade">
   <div class="numbertext">4 / 6</div>
-  <img src="RHAPaintingandSucculents.jpg" alt="Space" style = "width:50%">
+  <img src="RHAPaintingandSucculents.jpg" alt="RHA Painting and Succulents" style = "width:40%">
   <div class="text">"RHA Painting & Succulents"<br> Made in Adobe Illustrator & Adobe Photoshop</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">5 / 6</div>
-  <img src="RHA TOWN HALL IG-01.png" alt="Space" style = "width:50%">
+  <img src="RHA TOWN HALL IG-01.png" alt="RHA Town Hall" style = "width:40%">
   <div class="text"> "RHA Town Hall" <br> Made in Adobe Illustrator</div>
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">6 / 6</div>
-  <img src="RHASticker.JPG" alt="Space" style = "width:50%">
-  <div class="text"> "RHA Gradient Heart Sticker"<br> Made in Procreate</div>
+  <div class="numbertext"> 6 / 6</div>
+  <img src="RHASticker.JPG" alt="Sticker designed for SJSU RHA" style = "width:40%">
+  <div class="text"> Designed for merchandise. Made in Procreate. </div>
 </div>
 </div>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
 
+</div>
 
 <br>
 <br>
 <div class = "text-container">
-<h1>Design - Residence Hall Association</h1>
+<h1>Residence Hall Association</h1>
 <br>
 <br>
 </div>
@@ -100,57 +99,34 @@ have been created in different dimensions for advertising purposes, while other 
 </p>
 <br>
 <br>
-<p style = " font-size: 30px;top: 630px; align-items: right; right: 10px;">More Projects Coming Soon</p>
+<p style = "font-family:Poppins;font:24px; top: 630px; align-items: right; right: 10px;">More Projects Coming Soon</p>
 <br>
 <br>
 </div>
-<div class="slideshow-container2">
-  <div class="mySlides fade">
-      <div class="numbertext">1 / 6</div>
-      <img src="LibraSeason.jpg" alt = "Libra" style="width:50%">
-      <div class="text"> Libra <br>Made in Adobe Illustrator & Adobe Photoshop</div>
-  </div>
-  </div>
 <br>
 <br>
-<!-- <div class="personal-works">
-  <h2>Personal Works</h2>
-  <br>
-  <br>
-  <br>
-  <br>
-  <div class="personal">
-      <img class="images" src="AprendeACocinarPoster.jpg" alt="Plates in Your Face (2023)">
-      <img class="images" src="LibraSeason.jpg" alt="Libra (2023)">  </div> -->
 
-      <!-- Add more image elements as needed -->
-<br>
-<br>
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-</div>
-<script>let slideIndex = 0;
-  showSlides();
-  
-  function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
-  }</script>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
 <style>
 
 /* SLIDESHOW */
@@ -168,7 +144,7 @@ img {vertical-align: left;}
   justify-content: left;
   align-items: left;
   top: 140px;
-  left: 60px;
+  left: 150px;
 }
 
 .slideshow-container2 {
@@ -294,8 +270,8 @@ h1 {
   font-size: 24px;
   text-align: right;
     top: 100px;
-    left: 1080px;
-    padding-right: 50px;
+    left: 1160px;
+    padding-right: 0px;
     max-width: 3000px;
     position: absolute;
     color: #252525;
