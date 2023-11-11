@@ -57,14 +57,33 @@
         <div class="container">
             <div class="data">
                 <div class="images">
-                    <img src="Figma1.png" alt="Protoype on Macbook Model">
-                    <img src="Figma2.png" alt="Protoype on Macbook Model">
+                    <img src="Figma1.png" alt="Protoype on Macbook Model" id="largeImage" onclick="hideZoomedImage()">
+                    <!-- <img src="Figma2.png" alt="Protoype on Macbook Model"> -->
 
                 </div>
             </div>
         </div>
     </div>
+<script>
+        function zoomImage() {
+            document.getElementById('zoomedImage').style.display = 'block';
+        }
+
+        function hideZoomedImage() {
+            document.getElementById('zoomedImage').style.display = 'none';
+        }
+
+</script>
     <style>
+
+#Figma1 {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+        }
 
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
