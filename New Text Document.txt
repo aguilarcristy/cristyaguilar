@@ -40,37 +40,54 @@
             </ul>
         </nav>
     </header>
-    <h1 style="font-family: 'Poppins'; color: #ff69b4; font-size: 60px; top: 10px; text-align: center; max-width: 1920px; line-height: 1.00; position:relative;">Girlhood</h1>
-
+    <h1 style="font-family: 'Poppins'; color: #ff69b4; font-size: 40px; top: 10px; text-align: center; max-width: 1920px; line-height: 1.00; position:relative;">Girlhood</h1>
+    <div class = "container">
+    <p>The following project, "Girlhood" focuses on my experiences as a woman. 
+    From cat calling, to body image these posters are visual representations of experiences that
+    have shaped me and built my perspective on society . 
+    <br><br> The following digital illustrations have been created using Adobe Illustrator. StableDiffusion, amongst other AI generative softwares have been used
+    to select color palettes and inspire composition. Overall, AI has been used for brainstorming rather.
+</p>
+</div>
 <div class="data">
   <!-- <div class="item"> -->
 	<img class="images" src="175_13.png"></img>
-  <!-- <div class="text">"13"<br>Made in Adobe Illustrator</div> -->
-  
+  <div class="text">"13"<br>Made in Adobe Illustrator</div>
 
   <!-- <div class="item"> -->
-    <a href="AAC.html">
-  <img class="images" src="AprendeACocinar_Final_AprendeACocinar.png"></img>
-  <!-- <div class="text">"Aprende A Cocinar"<br>Made in Adobe Illustrator</div> -->
-</a>
+  <img class="images" src="175_AprendeACocinar.png"></img>
+  <div class="text">"Aprende A Cocinar"<br>Made in Adobe Illustrator</div>
 
   <!-- <div class="item"> -->
   <img class="images" src="175_Dismorfia.png"></img>
-  <!-- <div class="text">"Dismorfia"<br>Made in Adobe Illustrator</div> -->
+  <div class="text">"Dismorfia"<br>Made in Adobe Illustrator</div>
 
   <!-- <div class="item"> -->
   <img class="images" src="LaHijaMayor.png"></img>
-  <!-- <div class="text">"La Hija Mayor"<br>Made in Adobe Illustrator</div> -->
+  <div class="text">"La Hija Mayor"<br>Made in Adobe Illustrator</div>
 
 </div>
-<div class = "container">
-  <p>The following project, "Girlhood" focuses on my experiences as a woman. 
-  From cat calling, to body image these posters are visual representations of experiences that
-  have shaped me and built my perspective on society. 
-  <br><br> The following digital illustrations have been created using Adobe Illustrator. Stable Diffusion, amongst other AI generative softwares, such as Adobe Firefly, have been used
-  to select color palettes and inspire composition. Overall, AI has been used to assist and quicken brainstorming stages.
-</p>
+<!-- Slideshow container -->
+<!-- <div class="slideshow-container"> -->
+  <!-- <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="175_Final Project-02.png" style="width:20%">
+      <div class="text">"Aprende a Cocinar"<br>Made with Adobe Illustrator</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="175_Final Project-03.png" alt="Venus in Libra GIF image" style = "width:20%">
+    <div class="text">"Cat Calling: Meow!"<br>Made with Adobe Illustrator</div>
 </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="175_Final Project-04.png" alt="Space" style = "width:20%">
+  <div class="text">"Today, I don't know what I look like"<br>Made with Adobe Illustrator</div>
+</div> -->
+
+
 <br>
 <div style="text-align:center">
     <span class="dot"></span> 
@@ -119,14 +136,15 @@ img {vertical-align: center;}
 } */
 
 /* Caption text */
-.p {
+.text {
   color: #252525;
   font-size: 12px;
   padding: 8px 12px;
   position: relative;
-  max-width: 400px;
+  /* bottom: 0px; */
+  width: 100%;
   text-align: center;
-  align-items: center;
+
 }
 
 
@@ -185,6 +203,7 @@ img {vertical-align: center;}
     position: relative;
     background-color: #ffff;
     border-radius: 50px;
+    box-shadow: 0 0 30px rgba(255, 51, 143, 0.4);
     width: 100%;
     height: auto; /* Adjust the height as needed, or remove it for dynamic height */
     display: flex;
@@ -192,7 +211,40 @@ img {vertical-align: center;}
     align-items: center; /* Center the content horizontally */
     justify-content: center; /* Center the content vertically */
 }
-
+/* PARAGRAPH STYLIZATION */
+/* h1 {
+    font-size: 48px;
+    text-align: center;
+    top: 60px;
+    max-width: 400px;
+    position: relative;
+    color: #252525;
+    font-family: 'Poppins';
+    line-height: 1.75;
+    display: flex;
+    justify-content: center;
+} */
+/* p{
+    font-size: 18px;
+    text-align: center;
+    top: 70px;
+    max-width: 400px;
+    position: relative;
+    color: #252525;
+    font-family: 'Poppins';
+    line-height: 1.75;
+    display: flex;
+    justify-content: center;
+}          */
+    
+.gif-container {
+            text-align: right; /* Align the content to the right */
+        }
+        
+.gif-container img {
+            width: 50%; /* Adjust the width as needed */
+            max-width: 300px; /* Limit the maximum width */
+        }
 
 .data {
 	width: 100%;
@@ -202,7 +254,7 @@ img {vertical-align: center;}
   	grid-row-gap: 20px;
   	justify-content: center;
   	align-items: center;
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 .images {
