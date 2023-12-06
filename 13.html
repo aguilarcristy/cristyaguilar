@@ -40,41 +40,27 @@
             </ul>
         </nav>
     </header>
-    <h1 style="font-family: 'Poppins'; color: #ff69b4; font-size: 60px; top: 10px; text-align: center; max-width: 1920px; line-height: 1.00; position:relative;">Girlhood</h1>
-
+<h1 style="font-family: 'Poppins'; color: #ff69b4; font-size: 50px; top: 20px; text-align: center; max-width: 1920px; line-height: 1.00; position:relative;">Girlhood: 13</h1>
+   
 <div class="data">
-  <!-- <div class="item"> -->
-    <a href="13.html">
-	<img class="images" src="175_13.png"></img>
-  <!-- <div class="text">"13"<br>Made in Adobe Illustrator</div> -->
-  
+  <div class="images">
+  <img class="images" src="175_13.png"></img>
+  <div class="text">"13"<br>Made in Adobe Illustrator</div>
+  </div>
 
-  <!-- <div class="item"> -->
-    <a href="AAC.html">
-  <img class="images" src="AprendeACocinar_Final_AprendeACocinar.png"></img>
-  <!-- <div class="text">"Aprende A Cocinar"<br>Made in Adobe Illustrator</div> -->
-</a>
-
-  <!-- <div class="item"> -->
-    <a href ="Dismorfia.html">
-  <img class="images" src="175_Dismorfia.png"></img>
-  <!-- <div class="text">"Dismorfia"<br>Made in Adobe Illustrator</div> -->
-
-  <!-- <div class="item"> -->
-    <a href ="LHM.html">
-  <img class="images" src="LaHijaMayor.png"></img>
-  <!-- <div class="text">"La Hija Mayor"<br>Made in Adobe Illustrator</div> -->
-
-  </a>
-</div>
 <div class = "container">
-  <p>The following project, "Girlhood" focuses on my experiences as a woman. 
-  From cat calling, to body image these posters are visual representations of experiences that
-  have shaped me and built my perspective on society. 
-  <br><br> The following digital illustrations have been created using Adobe Illustrator. Stable Diffusion, amongst other AI generative softwares, such as Adobe Firefly, have been used
-  to select color palettes and inspire composition. Overall, AI has been used to assist and quicken brainstorming stages.
-</p>
-</div>
+      <p>13 is a part of the “Girlhood” series. Inspired by the first time I was catcalled (which happened when I was 13), this piece is a representation of what girlhood is like for women. Catcalling, whistling - these are uncomfortable aspects of life that emerge during our girlhood that leave me with the question - why do * men?
+        <br><br>
+        Girlhood is, unfortunately, being catcalled and feeling uncomfortable with your physical presence at the sight of * men. 
+        <br><br> 
+        *some 
+        <br><br>
+        Created using Adobe Illustrator using Stable Diffusion and Adobe Firefly.
+</p>        
+
+      </div>
+    </div>
+
 <br>
 <div style="text-align:center">
     <span class="dot"></span> 
@@ -85,7 +71,6 @@
 <script>
 let slideIndex = 0;
 showSlides();
-
 function showSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -106,9 +91,7 @@ function showSlides() {
 
 <style>
 /*CSS STYLING FOR THE SLID SHOW  */
-* {box-sizing: border-box;}
 body {font-family: 'Poppins'}
-.mySlides {display: none;}
 img {vertical-align: center;}
 
 /* Slideshow container */
@@ -123,16 +106,34 @@ img {vertical-align: center;}
 } */
 
 /* Caption text */
-.p {
+.text {
   color: #252525;
   font-size: 12px;
   padding: 8px 12px;
   position: relative;
-  max-width: 400px;
+  width: 100%;
   text-align: center;
-  align-items: center;
+  max-width: 600px; /* Adjust the max-width to your preference */
+  border-radius: 50px;
+  height: auto; /* Adjust the height as needed, or remove it for dynamic height */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+  justify-content: center; /* Center the content vertically */
+
 }
 
+p{
+    font-size: 16px;
+    text-align: right;
+    /* top: 70px; */
+    padding-right: 50px;
+    /* max-width: 400px; */
+    position: relative;
+    color: #252525;
+    font-family: 'Poppins';
+    line-height: 1.75;
+}
 
 /* Number text (1/3 etc) */
 .numbertext {
@@ -181,38 +182,35 @@ img {vertical-align: center;}
   }
 }
 
+/* THIS IS FOR TEXT */
 .container {
-    max-width: 800px; /* Adjust the max-width to your preference */
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 20px;
-    top: 20px;
+    max-width: 600px; /* Adjust the max-width to your preference */
+    padding-right: 40px;
+    top: 0px;
     position: relative;
-    background-color: #ffff;
-    border-radius: 50px;
-    width: 100%;
     height: auto; /* Adjust the height as needed, or remove it for dynamic height */
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the content horizontally */
-    justify-content: center; /* Center the content vertically */
+    align-items: right; /* Center the content horizontally */
+    justify-content: right; /* Center the content vertically */
+
 }
 
-
+/*  */
 .data {
 	width: 100%;
-	grid-template-columns: auto auto auto auto auto auto;
+	  grid-template-columns: auto auto;
   	display: grid;
-  	grid-column-gap: 20px;
-  	grid-row-gap: 20px;
-  	justify-content: center;
-  	align-items: center;
-    margin-top: 80px;
+  	grid-column-gap: 1px;
+  	grid-row-gap: 1px;
+    padding: 50px;
 }
 
 .images {
-	width: 300px;
+	width: 80%;
 	height: auto;
 }
+
     </style>
     <!-- Div Class w/ Social Media Icons -->
     <div class="icons">
