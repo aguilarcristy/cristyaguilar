@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="icon" type="image/x-icon" href="Eyes.png"> <!-- Link to your favicon -->
     <title>Design</title>
     <link rel = "stylesheet"
@@ -40,7 +41,7 @@
         </nav>
     </header>
 
-<div class="slideshow-container">
+<!-- <div class="slideshow-container">
   <div class="mySlides fade">
       <div class="numbertext">1 / 6</div>
       <img src="BowlingGraphic.png" alt = "Bowling Night" style="width:40%">
@@ -85,114 +86,41 @@
   <span class="dot"></span> 
   <span class="dot"></span> 
 
+</div> -->
+
+<div class="w3-container w3-padding-32" id="projects">
+  <h1 class="w3-border-bottom w3-padding-16">Projects</h1>
 </div>
 
-<br>
-<br>
-<div class = "text-container">
-<h1>Residence Hall Association</h1>
-<br>
-<br>
-</div>
-<p> The following graphics/illustrations were designed for the San Jose State University Residence
-  Hall Association as their VP of Marketing & Outreach. <br><br> My task as their graphic designer has been to create illustrations
-  and graphics that are eye catching and resonate with a younger, college student audience.<br><br> These graphics
-have been created in different dimensions for advertising purposes, while other designs have been used for merchandise. <br><br> 2022-Present | Made with Adobe Illustrator & Photoshop
-</p>
-<br>
-<br>
-<p style = "font-family:Poppins;font:24px; top: 630px; align-items: right; right: 10px;">More Projects Coming Soon</p>
-<br>
-<br>
-</div>
-<br>
-<br>
+<div class="w3-row-padding">
 
-<script>
-let slideIndex = 0;
-showSlides();
+  <!-- RHA DESIGN -->
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+      <img src="BowlingGraphic.png" alt="House" style="width:100%">
+      <h2>Residence Hall Association</h2>
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
-}
-</script>
+    </div>
+  </div>
+  <!-- ELIZABETH DESIGN -->
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+      <img src="RHASticker.JPG" alt="House" style="width:100%">
+      <h2>Elizbeth's Enlightenment</h2>
+    </div>
+  </div>
+
+  <!-- PERSONAL DESIGN & ILLUSTRATION -->
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+      <img src="LibraSeason.jpg" alt="House" style="width:100%">
+      <h2>Personal</h2>
+    </div>
+  </div>
 
 <style>
 
-/* SLIDESHOW */
-/*CSS STYLING FOR THE SLID SHOW  */
-* {box-sizing: border-box;}
-body {font-family: 'Poppins'}
-.mySlides {display: none;}
-img {vertical-align: left;}
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: absolute;
-  margin: auto;
-  justify-content: left;
-  align-items: left;
-  top: 140px;
-  left: 150px;
-}
-
-.slideshow-container2 {
-  max-width: 1000px;
-  position: absolute;
-  margin: auto;
-  justify-content: left;
-  align-items: left;
-  top: 140px;
-  left: 60px;
-}
-
-/* Caption text */
-.text {
-  color: #252525;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: relative;
-  bottom: 0px;
-  width: 100%;
-  text-align: left;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #252525;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: relative;
-  top: 60;
-}
-.active {
-  background-color: #fc38bb;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 2.0s;
-}
-
-@keyframes fade {
-  from {opacity: .90} 
-  to {opacity: 1}
-}
   /* Container for RHA Text & Images */
   .container {
             display: flex;
@@ -271,12 +199,20 @@ img {vertical-align: left;}
 /* PARAGRAPH STYLIZATION */
 h1 {
   font-size: 24px;
-  text-align: right;
-    top: 100px;
-    left: 1160px;
-    padding-right: 0px;
-    max-width: 3000px;
+  text-align: center;
+    margin: 20px;
     position: absolute;
+    color: #252525;
+    font-family: 'Poppins';
+    line-height: 1.5;
+    flex: 1;
+}
+
+h2 {
+  font-size: 18px;
+  text-align: center;
+    margin: 20px;
+    position: relative;
     color: #252525;
     font-family: 'Poppins';
     line-height: 1.5;
@@ -295,12 +231,18 @@ p {
     line-height: 1.75;
     flex: 1;
 }
-
-
-
+/* FLOATING EYES */
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateY(10px); /* Adjust the vertical movement distance */
+  }
+}
 </style>
 
-    <!-- Div Class w/ Social Media Icons On Nav Bar -->
+<!-- Div Class w/ Social Media Icons On Nav Bar -->
     <div class="icons">
       <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/cristy-aguilar-b99aa219a/">
         <ion-icon name="logo-linkedin"></ion-icon>
@@ -313,7 +255,5 @@ p {
   </div>
   <br>
 <br>
-  <div class="footer"></div>
-
     </body>
     </html>

@@ -12,14 +12,7 @@
             margin: 0;
             padding: 0;
         }
-.header {
-            z-index: 1;
-            background: linear-gradient(-45deg, #ffb0e5,  rgb(255, 125, 212), #ffbeef, white );
-            background-color: 400% 400%;
-            width: 100%;
-            height: 100vh;
-            animation: animate 15s ease infinite;
-        }
+
         .header ul {
             height: 50px;
             display: flex;
@@ -45,10 +38,10 @@
         
 .floating-image2 {
   animation: floatUpDown 2.5s infinite; /* Adjust the duration as needed */
-  float: left;
+    float: left;
     position: absolute;
-    top: 100px; /* Adjust this value to position the image vertically */
-    right: 1220px; /* Adjust this value to position the image horizontally */
+    top: 20%; /* Adjust this value to position the image vertically */
+    align-items: right; /* Adjust this value to position the image horizontally */
     width: 10%;
 
 }
@@ -57,7 +50,7 @@
     animation: floatUpDown 2.5s infinite; /* Adjust the duration as needed */
     float: left;
     position: absolute;
-    top: 450px; /* Adjust this value to position the image vertically */
+    top: 60%; /* Adjust this value to position the image vertically */
     left: 1220px; /* Adjust this value to position the image horizontally */
     width: 10%;
 }
@@ -93,31 +86,20 @@ img {
 }
 
 
-/* .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 10px;
-    background-color: #FFA3CC;
-    color: white;
-    text-align: center;
-  } */
-
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 100%) {
   .text {font-size: 11px}
 }
   /* styles for tablet devices */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (max-width: 100%) {
   body {
     font-size: 14px;
-    width: 80%;
+    width: 100%;
     margin: auto;
   }
 }
 
 /* styles for mobile devices */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 100%) {
   body {
     font-size: 12px;
     width: 100%;
