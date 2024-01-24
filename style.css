@@ -112,18 +112,6 @@ img {
   margin: 15px;
 }
 
-/* .footer {
-  position: fixed;
-  width: 100%;
-  background: #FFA3CC;
-  padding: 20px 0; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  bottom: 0;
-} */
-
 .social-icon,
 .menu {
   display: flex;
@@ -163,3 +151,29 @@ img {
   font-weight: 300;
 }
 
+.text-container {
+font-size: 18px;
+text-align: right;
+margin: 20%;
+max-width: 50%;
+position: relative;
+color: #252525;
+font-family: 'Poppins';
+line-height: 1.75;
+}
+
+/* Add this CSS in your stylesheet or in the head of your HTML document */
+
+img.left-align {
+  align-content: left;
+  margin-right: 10px; /* Adjust the margin as needed */
+  clear: both; /* Clear the float on smaller screens */
+}
+
+/* Media query for screens with a maximum width of 600px (adjust as needed) */
+@media screen and (max-width: 50%) {
+  img.left-align {
+      float: none; /* Remove the float for smaller screens */
+      margin-right: 0; /* Remove the margin for smaller screens */
+  }
+}
