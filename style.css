@@ -5,8 +5,9 @@ header {
 
 header img {
   height: 80px;
-  top: 0px;
+  /* top: 0px; */
   left: 10px;
+  align-items: left;
   position: absolute;
 }
 body {
@@ -109,7 +110,7 @@ img {
   right: 0px;
   display: flex;
   align-items: right;
-  margin: 15px;
+  margin: 20px;
 }
 
 .social-icon,
@@ -176,4 +177,36 @@ img.left-align {
       float: none; /* Remove the float for smaller screens */
       margin-right: 0; /* Remove the margin for smaller screens */
   }
+}
+
+
+h1 {
+  font-family: 'Poppins'; 
+  color: #232323; 
+  font-size: 40px; 
+  text-align: left; 
+  line-height: 1.25; 
+  position: relative;
+  padding: 25px;
+}
+
+p {
+  font-family: 'Poppins'; 
+  color: #232323; 
+  font-size: 18px; 
+  text-align: left; 
+  line-height: 1.25; 
+  position: relative;
+  padding: 25px;
+
+}
+
+footer {
+  background-color: #faafd5;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: relative;
+  border-bottom-style: ;
+  min-height: 10vh;
 }
