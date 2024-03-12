@@ -3,111 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="icon" type="image/x-icon" href="Eyes.png"> <!-- Link to your favicon -->
-    <title>Design</title>
-    <link rel = "stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap">
-</head>
-<body>
-    <header>
-        <a href="index.html">
-            <img src="Eyes.png" alt="Eyes" class="floating-image">
-        </a>
-        <nav class="navbar navbar-expand-sm bg-light navbar-light">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>  
-              <li class="nav-item">
-                    <a class="nav-link" href="3DModeling.html">3D Modeling</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Design.html">Design</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="UIUX.html">UI/UX Design</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="About.html">About Me</a>
-                </li>
-                <!-- <li class="nav-item">
-                  <a class="nav-link" href="ArtistStatement.html">Artist Statement</a>
-                  <li class="nav-item">
-                    <a class="nav-link" href="Girlhood.html"> Girlhood</a> -->
-              </li>
-            </ul>
-        </nav>
-    </header>
-
-<style>
-  /* Container for RHA Text & Images */
-  .container {
-            display: flex;
-            flex-direction: row;
-            align-items: left;
-            justify-content: space-between;
-            padding: 1px;
-            /* padding-top: 40px; */
-            padding-left: 40px;
-
-        }
-/* Container for Personal Text & Images */
-
-.personal {
-            display: flex;
-            flex-direction: row;
-            align-items: left;
-            justify-content: space-between;
-            padding: 5px;
-            height: auto;
-            /* top: 60px; */
-            /* padding-top: 40px; */
-            padding-left: 40px;
-
-        }
-.text-container {
-            display: flex;
-            flex-direction: row;
-            align-items: right;
-            justify-content: space-between;
-            padding: 5px;
-        }
-
-
-.images {
-	width: 400px;
-	height: auto;
-  align-items: left;
-  gap: 1px;
-
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-/* styles for tablet devices */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  body {
-    font-size: 14px;
-    width: 80%;
-    margin: auto;
-  }
-}
-
-/* styles for mobile devices */
-@media only screen and (max-width: 767px) {
-  body {
-    font-size: 12px;
-    width: 100%;
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Eyes.png">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap">
+    <style>
+    body {
     margin: 0;
-  }
+    padding: 0;
+        }
+
+    .header ul {
+            height: 50px;
+            display: flex;
+            justify-content: center;
+        }
+    .header ul li {
+            display: inline-block;
+            padding: 0px 15px;
+        }
+        @keyframes animate {
+            0% {
+                background-position: 0 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0 50%;
+            }
+        }
+
+/* FLOATING EYES 77-90 */
+        
+.floating-image2 {
+  animation: floatUpDown 2.5s infinite; /* Adjust the duration as needed */
+    float: left;
+    position: absolute;
+    top: 20%; /* Adjust this value to position the image vertically */
+    align-items: right; /* Adjust this value to position the image horizontally */
+    width: 10%;
+
 }
 
+.floating-image3{
+    animation: floatUpDown 2.5s infinite; /* Adjust the duration as needed */
+    float: left;
+    position: absolute;
+    top: 60%; /* Adjust this value to position the image vertically */
+    left: 1220px; /* Adjust this value to position the image horizontally */
+    width: 10%;
+}
 
-/* FLOATING EYES */
+/* Floating Icon & Home Button Movement*/
 @keyframes floatUpDown {
   0%, 100% {
     transform: translateX(0);
@@ -116,21 +64,115 @@
     transform: translateY(10px); /* Adjust the vertical movement distance */
   }
 }
-</style>
 
-<!-- Div Class w/ Social Media Icons On Nav Bar -->
-    <div class="icons">
-      <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/cristy-aguilar-b99aa219a/">
-        <ion-icon name="logo-linkedin"></ion-icon>
-      </a></li>
-    <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/cristya_art/?next=%2F">
-        <ion-icon name="logo-instagram"></ion-icon>
-      </a></li>
-      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 100%) {
+  .text {font-size: 11px}
+}
+  /* styles for tablet devices */
+@media only screen and (max-width: 100%) {
+  body {
+    font-size: 14px;
+    width: 100%;
+    margin: auto;
+  }
+}
+/* styles for mobile devices */
+@media only screen and (max-width: 100%) {
+  body {
+    font-size: 12px;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+    <a href="index.html">
+    <img src="Eyes.png" alt="Eyes" class="floating-image"></a>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link" href="3DModeling.html">3D Modeling</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Design.html">Design</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="UIUX.html">UI/UX Design</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
+            </li><br>
+              <li class="nav-item"><a class="social-icon__link" href="https://www.linkedin.com/in/cristy-aguilar-b99aa219a/">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a></li>
+            <li class="nav-item"><a class="social-icon__link" href="https://www.instagram.com/cristya_art/?next=%2F">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a></li>
+              <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+              <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            </div>
+        </ul>
+    </nav>
+    </header>
+
+<title>Design</title>
+<section class="resume-section">
+  <h1>Projects</h1>
+  <p>View selected projects below.</p>
+
+  <div class="project-wrapper">
+    <section class="project-item">
+      <img src="Elizabeth Website/Design_Astrology_Reading.png" srcset="images/project-decoded-youtube-1000px.png 2x" alt="Decoded by Christina YouTube video thumbnails">
+      <h3>Psychic Readings by Elizabeth</h3>
+      <p>Creating assets for website for a client</p>
+    </section>
+
+    <section class="project-item">
+      <img src="Figma1.png" srcset="images/project-courses-1000px.png 2x" alt="List of course names and thumbnails">
+      <h3>San Jose State University Portal Case Study</h3>
+      <p>Redesigning the User Interface of the San Jose State University Portal.</p>
+      <a class="btn" href="https://aguilarcristy.github.io/cristyaguilar/UIUX.html" target="_blank">Case Study</a>
+    </section>
+
+    <section class="project-item">
+      <img src="RHA/RHASticker.JPG" srcset="images/project-troy-podcast-1000px.png 2x" alt="The TROY podcast website homepage">
+      <a class="btn" href="https://aguilarcristy.github.io/cristyaguilar/RHA.html" target="_blank">SJSU Resident Hall Association</a>
+
+    </section>
+    
+    <section class="project-item">
+      <img src="LibraSeason.jpg" srcset="images/project-the-wire-ipsum-1000px.png 2x" alt="The Wire Ipsum quote generator website">
+      <h3>Personal Projects</h3>
+      <p>Some of my personal projects and designs</p>
+      <a class="btn" href="https://aguilarcristy.github.io/cristyaguilar/Personal.html" target="_blank">Personal</a>
+    </section>
   </div>
-  <br>
-<br>
-<h1>Design</h1>
-    </body>
-    </html>
+</section>
+</body>
+</html>
