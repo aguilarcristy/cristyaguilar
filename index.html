@@ -8,36 +8,33 @@
     <script src="main.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap">
     <style>
-    body {
-    margin: 0;
-    padding: 0;
-        }
+  body {
+    height: 100%;
+    animation-name: bgcolor;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+     }
+     
+  @keyframes bgcolor{
+    0% {
+ background-color: #fff9fb;
+    }
+    10% {
+ background-color: #ffd5ea;
+    }
+ 20% {
+ background-color: #e9a4c6;
+ } 
+ 10% {
+    background-color: #f0a1c8;
+    } 
+ }
 
-    .header ul {
-            height: 50px;
-            display: flex;
-            justify-content: center;
-        }
-    .header ul li {
-            display: inline-block;
-            padding: 0px 15px;
-        }
-        @keyframes animate {
-            0% {
-                background-position: 0 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0 50%;
-            }
-        }
 
-/* FLOATING EYES 77-90 */
-        
-
-/* Floating Icon & Home Button Movement*/
+img {
+  max-width: 100%;
+  height: auto;
+}
 @keyframes floatUpDown {
   0%, 100% {
     transform: translateX(0);
@@ -46,12 +43,6 @@
     transform: translateY(10px); /* Adjust the vertical movement distance */
   }
 }
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 @keyframes fade {
   0% {
     opacity: 0;
@@ -87,6 +78,7 @@ img {
   }
 }
 
+
     </style>
 </head>
 <body>
@@ -98,11 +90,11 @@ img {
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
                 <a class="nav-link" href="3DModeling.html">3D Modeling</a>
-            </li>
+            </li> -->
             <li class="nav-item">
-                <a class="nav-link" href="Design.html">Design</a>
+                <a class="nav-link" href="Design.html">Graphic Design</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="UIUX.html">UI/UX Design</a>
@@ -122,6 +114,7 @@ img {
         </ul>
     </nav>
     </header>
+
 <title>Cristy Aguilar | Multi Media Designer</title>
 <h1>Hi, I'm Cristy!</h1>
 <p>Welcome to my website!</p>

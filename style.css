@@ -1,5 +1,5 @@
 header {
-  background-color: #ffff;
+  background-color: #ffffff00;
   text-align: right;
 }
 
@@ -59,6 +59,7 @@ nav a:hover {
   animation: floatUpDown 2.5s infinite; /* Adjust the duration as needed */
   max-width: 5%;
   height: auto;
+  margin: 20px;
 }
 
 /* Floating Icon & Home Button Movement*/
@@ -182,8 +183,18 @@ img.left-align {
 h1 {
   font-family: 'Poppins'; 
   color: #232323; 
-  font-size: 2.0rem; 
+  font-size: 1.75rem; 
   text-align: left; 
+  line-height: 1.25; 
+  position: relative;
+  margin: 50px 50px;
+}
+
+h2 {
+  font-family: 'Poppins'; 
+  color: #232323; 
+  font-size: 1.5rem; 
+  text-align: center; 
   line-height: 1.25; 
   position: relative;
   margin: 10px 50px;
@@ -194,7 +205,7 @@ p {
   color: #232323; 
   font-size: 1.0rem; 
   text-align: left; 
-  line-height: 1.25; 
+  line-height: 1.75; 
   position: relative;
   margin: 10px 50px;
 
@@ -215,12 +226,12 @@ footer {
 
 .socials {
   list-style-type: none;
-  margin: 40px 40px;
+  margin: 15px 15px;
 }
 .socials li {
   display: inline-block;
   /* margin-left: 10px; */
-  margin: 40px 40px;
+  margin: 15px 15px;
 
 }
 .socials img {
@@ -286,7 +297,7 @@ footer {
 /* Projects
 ------------------------------------*/
 .project-item {
-  margin: 30px 0;
+  margin: 30px 30px;
 }
 .project-item img {
   width: 300px;
@@ -342,23 +353,34 @@ footer {
   min-height:auto;
   margin: 40px 40px;
   padding: 30px;
-  position: absolute;
+  position: relative;
   background-color: #ffff;
-  border-radius: 50px;
+  border-radius: 30px;
   box-shadow: 0 0 30px rgba(255, 51, 143, 0.4);
 }
 
 .container2 {
-  top: 430px;
   margin: 40px 40px;
   padding: 30px;
-  position: absolute;
+  position: relative;
   background-color: #ffff;
   border-radius: 50px;
-  box-shadow: 0 0 20px rgba(255, 51, 143, 0.4);
-  width: 380px; /* Fixed width for the square-like shape */
-  height: 180px; /* Fixed height for the square-like shape */
+  box-shadow: 0 0 20px rgba(255, 188, 218, 0.4);
+  width: 350px; /* Fixed width for the square-like shape */
+  height: 150px; /* Fixed height for the square-like shape */
   text-align: center;
   line-height: 1.0;
   float: right;
   }
+
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+
+  /* GRADIENT FOR SOME PAGES ONLY */
+
+
