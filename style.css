@@ -16,6 +16,8 @@ body {
   background: rgb(255, 255, 255);
   font-family: Poppins;
   color: #252525;
+
+  cursor: none;
 }
 
 html, body {
@@ -60,7 +62,7 @@ nav a:hover {
 /* FLOATING EYES */
 .floating-image {
   animation: floatUpDown 2.5s infinite; /* Adjust the duration as needed */
-  max-width: 5%;
+  max-width: 4.5%;
   height: auto;
   margin: 20px;
 }
@@ -107,14 +109,19 @@ img {
 }
 
 /* LINKEDIN & IG ICONS ON NAV BAR */
+
+
 .icons {
-  position: absolute;
-  top: 40px;
+  position: relative;
+  bottom: 80px;
+  padding: 20px 20px;
   right: 0px;
   display: flex;
-  align-items: right;
+  justify-content: flex-end; /* Align items to the right */
+  align-items: center; /* Align items vertically centered */
   margin: 20px;
 }
+
 
 .social-icon,
 .menu {
@@ -186,17 +193,18 @@ img.left-align {
 h1 {
   font-family: 'Poppins'; 
   color: #232323; 
-  font-size: 1.75rem; 
+  font-size: 1.5rem; 
   text-align: left; 
   line-height: 1.25; 
   position: relative;
   margin: 50px 50px;
+  padding: 30px 30px;
 }
 
 h2 {
   font-family: 'Poppins'; 
   color: #232323; 
-  font-size: 1.5rem; 
+  font-size: 1.25rem; 
   text-align: left; 
   line-height: 1.25; 
   position: relative;
@@ -219,11 +227,20 @@ p {
 /* FOOTER
 ------------------------------------*/
 footer {
-  background: #ffd5ea93;
+  position: fixed; /* or absolute, depending on your layout needs */
+  bottom: 0px;
+  width: 100%;
+  height: 8vh;
+
+}
+
+.footer-2 {
+  /* background: #ffd5ea93; */
   position: fixed; /* or absolute, depending on your layout needs */
   bottom: 0px;
   width: 100%;
   height: 10vh;
+
 }
 
 
@@ -300,13 +317,16 @@ footer {
 /* Projects
 ------------------------------------*/
 .project-item {
-  margin: 30px 30px;
+  margin: 20px 30px;
+  /* padding: 30px 30px;  */
 }
 .project-item img {
   /* width: 300px; */
   max-width: 50%;
-  margin: 20px;
+  margin: 30px 30px;
+  /* padding: 30px 30px; */
 }
+
 @media screen and (min-width:860px) {
   .project-item {
       display: flow-root;
@@ -368,12 +388,11 @@ footer {
   margin: 40px 40px;
   padding: 30px;
   position: relative;
-  align-items: center;
-  text-align: center;
-  background-color: #ffff;
-  /* border-color:#ff78a9; */
-  border-radius: 50px;
-  box-shadow: 0 0 20px #ff78a9;
+  align-items: left;
+  text-align: left;
+  background-color: #ffacca;
+  border-radius: 0px;
+  /* box-shadow: 0 0 20px #ff78a9; */
   width: 350px; /* Fixed width for the square-like shape */
   height: 150px; /* Fixed height for the square-like shape */
   line-height: 1.0;
@@ -384,8 +403,8 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
     }
 
   /* GRADIENT FOR SOME PAGES ONLY */
@@ -480,4 +499,15 @@ footer {
 }
 .education-item p {
   margin: 0;
+}
+
+/* CUSTOM CURSOR  */
+.custom-cursor {
+  position: fixed;
+  width: 30px; /* Adjust as needed */
+  height: 30px; /* Adjust as needed */
+  background-image: url('Assets/GradientHeart.png'); /* Replace with your cursor image path */
+  background-size: cover;
+  z-index: 9999; /* Make sure it's above other elements */
+  pointer-events: none; /* Allow clicks to pass through */
 }
