@@ -263,11 +263,11 @@ footer {
   }
   
   /* CUSTOM CURSOR  */
-.custom-cursor {
+  .custom-cursor {
     position: fixed;
-    width: 30px; /* Adjust as needed */
-    height: 30px; /* Adjust as needed */
-    background-image: url('Assets/GradientHeart.png'); /* Replace with your cursor image path */
+    width: 60px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    background-image: url('Eyes.png'); /* Replace with your cursor image path */
     background-size: cover;
     z-index: 9999; /* Make sure it's above other elements */
     pointer-events: none; /* Allow clicks to pass through */
@@ -275,9 +275,10 @@ footer {
 
   /* HEADER, PARAGRAPH  */
 h1 {
-    font-family: 'Poppins'; 
+    font-family: 'Poppins';
+    font-weight: 300px; 
     color: #232323; 
-    font-size: 1.5rem; 
+    font-size: 2.5rem; 
     text-align: center; 
     line-height: 1.25; 
     position: relative;
@@ -287,9 +288,10 @@ h1 {
   }
 
   h2{
-    font-family: 'Poppins'; 
+    font-family: 'Poppins';
+    font-weight: 300; 
     color: #232323; 
-    font-size: 1.25rem; 
+    font-size: 2.0rem; 
     text-align: center; 
     line-height: 1.25; 
     position: relative;
