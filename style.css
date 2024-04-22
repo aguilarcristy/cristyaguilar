@@ -196,20 +196,20 @@ h1 {
   text-align: left; 
   line-height: 1.25; 
   position: relative;
-  margin: 20px 50px 20px 50px;
-  padding: 30px 30px;
+  margin: 50px 50px;
+  /* padding: 30px 30px; */
 
 }
 
 h2 {
   font-family: 'Poppins'; 
   color: #232323; 
-  font-size: 1.25rem; 
+  font-size: 1.15rem; 
   text-align: left; 
   line-height: 1.25; 
   position: relative;
-  /* margin: 20px 50px 50px 20px; */
-  padding: 30px 30px;
+  margin: 20px 50px 50px 50px;
+  /* padding: 30px 30px; */
 }
 
 p {
@@ -270,6 +270,7 @@ footer {
 }
 .resume-section {
   margin-bottom: 50px;
+  line-height: 1.5;
 }
 .resume-section h2 {
   border-bottom: 2px dashed #d3d4d6;
@@ -357,24 +358,11 @@ footer {
   }
 }
 
-.about-container {
-    display: flex;
-    flex-direction: row;
-    margin: 0px 50px 20px 50px;
-    padding: 20px;
-    position: relative;
-    justify-content: left;
-    align-items: left;
-    text-align: left;
-    background-color: #f8dbe6;
-    border-radius: 20px;
-    line-height: 1.0;
-    float: left;
-    animation: Slide_Up 1.5s ease;
-    max-width: 80%;
-    max-height: 100%;
-  }
 
+.ease-in-text {
+  animation: Slide_Up 1.5s ease;
+
+}
   @keyframes Slide_Up{
     0%{
         transform: translateY(250px);
@@ -382,6 +370,32 @@ footer {
     100%{
         transform: translateY(0);
     }
+}
+
+@keyframes Slide_Left{
+  0%{
+      transform: translateX(300px);
+  }
+  100%{
+      transform: translateX(0);
+  }
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 50px 20px 50px;
+  padding: 20px 20px;
+  position: relative;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  background-color: #f8dbe6;
+  border-radius: 20px;
+  line-height: 1.0;
+  float: left;
+  animation: Slide_Left 1.5s ease;
+  max-width: 75%;
 }
 .about-text {
   font-family: 'Poppins'; 
@@ -396,22 +410,21 @@ footer {
 }
 
 .about-headshot {
+  min-width: 10%;
   max-width: 30%;
-  max-height: 30%;
+  min-height:10%;
+  max-height:40%;
+  width: auto;
+  height: auto; /* maintain aspect ratio */
   border-radius: 20px;
 }
 .parent {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     }
-
-  /* GRADIENT FOR SOME PAGES ONLY */
-
-
-
 
 /* RESUME
 ------------------------------------*/
@@ -437,6 +450,7 @@ footer {
 .project-item img {
   width: 300px;
   margin: 0px 50px;
+  border-radius: 20px;
 
 }
 @media screen and (min-width:860px) {
@@ -444,8 +458,10 @@ footer {
       display: flow-root;
   }
   .project-item img {
-      float: left;
-      margin-right: 20px;
+    float: left;
+    margin: 0px 20px 0px 20px;
+    /* margin-right: 10px 0px; */
+
   }
 }
 @media screen and (min-width:650px) and (max-width:859px) {
@@ -456,6 +472,7 @@ footer {
   }
   .project-item img {
       width: 100%;
+      border-radius: 20px;
   }
 }
 @media screen and (max-width:500px){
@@ -483,4 +500,27 @@ footer {
   background-size: cover;
   z-index: 9999; /* Make sure it's above other elements */
   pointer-events: none; /* Allow clicks to pass through */
+}
+
+.design-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 30px 0px 30px;
+  padding: 20px;
+  position: relative;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  border-radius: 20px;
+  line-height: 1.0;
+  float: left;
+  animation: Slide_Up 1.5s ease;
+  max-width: 50%;
+  max-height: 100%;
+}
+
+.list-css {
+  font-size: 1.0rem; 
+  margin: 20px 50px 20px 50px;
+  text-align: left;
 }

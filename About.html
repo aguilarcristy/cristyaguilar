@@ -32,10 +32,7 @@
             100% {
                 background-position: 0 50%;
             }
-        }
-
-/* FLOATING EYES 77-90 */
-        
+        }        
 
 /* Floating Icon & Home Button Movement*/
 @keyframes floatUpDown {
@@ -43,14 +40,10 @@
     transform: translateX(0);
   }
   50% {
-    transform: translateY(10px); /* Adjust the vertical movement distance */
+    transform: translateY(8px); /* Adjust the vertical movement distance */
   }
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
 
 @keyframes fade {
   0% {
@@ -87,11 +80,13 @@ img {
   }
 }
 
+
     </style>
 </head>
 <body>
 <div class="custom-cursor"></div>
-    <header>
+
+<header>
     <a href="index.html">
     <img src="Eyes.png" alt="Eyes" class="floating-image"></a>
     <nav class="navbar navbar-expand-sm bg-light navbar-light">
@@ -108,116 +103,31 @@ img {
             <li class="nav-item">
                 <a class="nav-link" href="About.html">About</a>
             </li><br>
-              <li class="nav-item"><a class="social-icon__link" href="https://www.linkedin.com/in/cristy-aguilar-b99aa219a/">
-                <ion-icon name="logo-linkedin"></ion-icon>
-              </a></li>
-            <li class="nav-item"><a class="social-icon__link" href="https://www.instagram.com/cristya_art/?next=%2F">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a></li>
               <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
               <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
             </div>
         </ul>
     </nav>
-    </header>
-<style>
-/* Add your custom CSS styles here */
+</header>
 
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-
-/* styles for tablet devices */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  body {
-    font-size: 14px;
-    width: 80%;
-    margin: auto;
-  }
-}
-
-/* styles for mobile devices */
-@media only screen and (max-width: 767px) {
-  body {
-    font-size: 12px;
-    width: 100%;
-    margin: 0;
-  }
-}
-body {
-    font-family: Poppins, sans-serif;
-    background-color: #ffff;
-    margin: 0;
-    padding: 0;
-}
-
-
-h4 {
-    font-size: 28px;
-    top: 740px;
-    left: 100px;
-    position: absolute;
-    color: #252525;
-}
-
-.img-headshot {
-    max-width: 25%;
-    position: absolute;
-    align-items: left;
-    margin: 30px 30px;
-    border-radius: 40px;
-}
-
-/* LARGE PFP HEART */
-.floating-image2 {
-  animation: floatUpDown 2.5s infinite; /* Adjust the duration as needed */
-  float: left;
-    position: absolute;
-    top: 120px; /* Adjust this value to position the image vertically */
-    right: 80px; /* Adjust this value to position the image horizontally */
-}
-
-/* CONTACT HEART */
-.floating-image3 {
-  animation: floatUpDown 2.5s infinite; /* Adjust the duration as needed */
-  float: left;
-    position: absolute;
-    top: 630px; /* Adjust this value to position the image vertically */
-    left: 540px; /* Adjust this value to position the image horizontally */
-}
-/* ABOUT HEART */
-.floating-image4 {
-  animation: floatUpDown 2.5s infinite; /* Adjust the duration as needed */
-    float: left;
-    position: absolute;
-    margin: 10px;
-    padding: 10px; 
-}
-@keyframes floatUpDown {
-  0%, 100% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateY(10px); /* Adjust the vertical movement distance */
-  }
-}
-</style>
 <title>About</title>
 <body>
 <h1>About Me</h1>
-<div class = "about-container">
-<img class="about-headshot" src="Assets/NewHeadshot.jpg">
-<div class = "about-text">
-<p>Hi!<br><br>
-I'm Cristy, a multi-media artist and designer based in the Bay Area.
-I have experience as a graphic designer, web designer, and more!
 
-<br><br> My interests range from UI/UX design, graphic design, and illustration. I work with softwares such as Figma, Adobe Illustrator, Adobe Photoshop, and Blender to create designs ranging from
-  advertisements to websites, as well as 3D models.<br><br> 
-
-Thanks for checking out my website! For questions, please email me at <a href="mailto:email@example.com">cristyaguilarart@gmail.com
-</p></div>
-</div>
+<div class = about-container>
+<section class = "resume-section"> 
+  <div class="project-wrapper">
+    <section class="project-item img">
+      <img src="Assets/NewHeadshot.jpg" alt="Digital Photo of Cristy Aguilar" style = "border-radius: 20px;">
+      <h3>Hi!</h3>
+      I'm Cristy, a multi-media artist and designer based in the Bay Area.
+      I have experience as a graphic designer, web designer, and more!
+      
+      <br><br> My interests range from UI/UX design, graphic design, and illustration. I work with softwares such as Figma, Adobe Illustrator, Adobe Photoshop, and Blender to create designs ranging from
+        advertisements to websites, as well as 3D models.<br><br> 
+      
+      Thanks for checking out my website!<br><br> For questions, please email me at <a href="mailto:email@example.com">cristyaguilarart@gmail.com</p>
+</section></section>
 
 <footer class="footer">
   <p>© 2024 by Cristy Aguilar | <a href="mailto:cristyaguilarart@gmail.com">cristyaguilarart@gmail.com</a></p>
@@ -234,7 +144,6 @@ Thanks for checking out my website! For questions, please email me at <a href="m
       </li>
   </ul>
 </footer>
-
 
 </body>
 </html>

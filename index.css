@@ -326,3 +326,16 @@ h1 {
     /* Animate to the left */
     animation: scroll-left 15s linear infinite;
   }
+
+  .ease-in-text {
+    animation: Slide_Up 1s ease;
+  
+  }
+    @keyframes Slide_Up{
+      0%{
+          transform: translateY(250px);
+      }
+      100%{
+          transform: translateY(0);
+      }
+  }
