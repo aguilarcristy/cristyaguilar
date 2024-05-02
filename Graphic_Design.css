@@ -1,0 +1,454 @@
+header {
+    background-color: #ffffff00;
+    text-align: right;
+  }
+  
+  header img {
+    height: 80px;
+    /* top: 0px; */
+    left: 10px;
+    align-items: left;
+    position: absolute;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 255, 255);
+    font-family: Poppins;
+    color: #252525;
+  
+    cursor: none;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0px 0; 
+  }
+  /* LINE 24: Adjust the padding to make the navbar bigger */
+  nav ul li {
+    display: inline;
+    margin-right: 30px;
+    align-items: right;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s;
+    font-size: 18px; /* Increase the font size if needed */
+    font-family: 'Poppins';
+  }
+  
+  nav a:hover {
+    color: rgb(255, 30, 150);
+  }
+  
+  /* WHITE SQUARE ON ABOUT ME PAGE */
+  .box {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ff78a9;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  
+  /* FLOATING EYES */
+  .floating-image {
+    animation: floatUpDown 2.5s infinite; /* Adjust the duration as needed */
+    max-width: 4.5%;
+    height: auto;
+    margin: 20px;
+  }
+  
+  /* Floating Icon & Home Button Movement*/
+  @keyframes floatUpDown {
+    0%, 100% {
+      transform: translateX(0px);
+    }
+    50% {
+      transform: translateY(0px); /* Adjust the vertical movement distance */
+    }
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+  
+  .floating-assets {
+    animation: floatUpDown 2.75s infinite; /* Adjust the duration as needed */
+  
+  }
+  
+  /* LINKEDIN & IG ICONS ON NAV BAR */
+  
+  
+  .icons {
+    /* position: relative; */
+    /* bottom: 0px; */
+    padding: 0px 0px;
+    right: 0px;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: right; /* Align items vertically centered */
+    margin: 0px;
+  
+    position: fixed; /* or absolute, depending on your layout needs */
+    bottom: 0px;
+    width: 100%;
+  }
+  
+  
+  .social-icon,
+  .menu {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    margin: 10px 0;
+    float: right;
+    position: relative;
+  }
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 2rem;
+    color: #232323;
+    margin: 10px 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+    color: rgb(255, 30, 150);
+  
+  }
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: #ff69b4;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .text-container {
+  font-size: 18px;
+  text-align: right;
+  margin: 20%;
+  max-width: 50%;
+  position: relative;
+  color: #252525;
+  font-family: 'Poppins';
+  line-height: 1.75;
+  }
+  
+  /* Add this CSS in your stylesheet or in the head of your HTML document */
+  
+  img.left-align {
+    align-content: left;
+    margin-right: 10px; /* Adjust the margin as needed */
+    clear: both; /* Clear the float on smaller screens */
+  }
+  
+  /* Media query for screens with a maximum width of 600px (adjust as needed) */
+  @media screen and (max-width: 50%) {
+    img.left-align {
+        float: none; /* Remove the float for smaller screens */
+        margin-right: 0; /* Remove the margin for smaller screens */
+    }
+  }
+  
+  /* HEADER, PARAGRAPH  */
+  h1 {
+    font-family: 'Poppins'; 
+    color: #232323; 
+    font-size: 1.5rem; 
+    text-align: left; 
+    line-height: 1.25; 
+    position: relative;
+    margin: 50px 50px;
+    /* padding: 30px 30px; */
+  
+  }
+  
+  h2 {
+    font-family: 'Poppins'; 
+    color: #232323; 
+    font-size: 1.15rem; 
+    text-align: left; 
+    line-height: 1.25; 
+    position: relative;
+    margin: 20px 50px 50px 50px;
+    /* padding: 30px 30px; */
+  }
+  
+  p {
+    font-family: 'Poppins'; 
+    color: #232323; 
+    font-size: 1.0rem; 
+    text-align: left; 
+    line-height: 1.75; 
+    position: relative;
+    margin: 0px 50px 0px 50px;
+  }
+  
+  
+  /* FOOTER
+  ------------------------------------*/
+  footer {
+    position: fixed; /* or absolute, depending on your layout needs */
+    bottom: 0px;
+    width: 100%;
+    height: 8vh;
+    font-family: 'Poppins'; 
+    color: #232323; 
+    font-size: 1.0rem; 
+    text-align: left; 
+    line-height: 1.75; 
+    /* padding: 10px 0px 10px 0px; */
+    margin: 8px 8px;
+    align-items: right;
+  }
+  
+  
+  
+  .socials {
+    list-style-type: none;
+    margin: 15px 15px;
+  }
+  .socials li {
+    display: inline-block;
+    /* margin-left: 10px; */
+    margin: 15px 15px;
+  
+  }
+  .socials img {
+    width: 32px;
+  }
+  .socials img:hover {
+    opacity: 0.5;
+  }
+  
+
+  @media screen and (max-width: 1200px){
+    .download-link {
+        position: absolute;
+    }
+  }
+  @media screen and (max-width: 500px){
+    .resume header::before {
+        height: 200px;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 2.6rem;
+    }
+  }
+  
+
+  
+  @media screen and (min-width:860px) {
+    .project-item {
+        display: flow-root;
+    }
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+  }
+  @media screen and (min-width:650px) and (max-width:859px) {
+    .project-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+    .project-item img {
+        width: 100%;
+    }
+  }
+  @media screen and (max-width:500px){
+    .project-item img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+  }
+  
+  
+  
+  .ease-in-text {
+    animation: Slide_Up 1.5s ease;
+  
+  }
+    @keyframes Slide_Up{
+      0%{
+          transform: translateY(250px);
+      }
+      100%{
+          transform: translateY(0);
+      }
+  }
+  
+  @keyframes Slide_Left{
+    0%{
+        transform: translateX(300px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+  }
+
+
+
+
+  @media screen and (min-width:650px) and (max-width:859px) {
+    .project-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+    .project-item img {
+        width: 100%;
+        border-radius: 20px;
+    }
+  }
+  @media screen and (max-width:500px){
+    .project-item img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+  }
+  
+
+  /* CUSTOM CURSOR  */
+  .custom-cursor {
+    position: fixed;
+    width: 60px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    background-image: url('Eyes.png'); /* Replace with your cursor image path */
+    background-size: cover;
+    z-index: 9999; /* Make sure it's above other elements */
+    pointer-events: none; /* Allow clicks to pass through */
+  }
+
+  
+  .list-css {
+    font-size: 1.0rem; 
+    margin: 20px 50px 20px 50px;
+    text-align: left;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins';
+  }
+  
+  /* Style the header */
+  .header {
+    grid-area: header;
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+  }
+  
+  /* The grid container */
+  .grid-container {
+    display: grid;
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left middle middle right right' 
+      'footer footer footer footer footer footer';
+    margin: 20px 20px;
+    grid-column-gap: 20px; 
+    /* - if you want gap between the columns */
+  } 
+  
+  .left,
+  .middle,
+  .right {
+    padding: 10px 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    text-align: center;
+    align-content: left;
+  }
+  
+  /* Style the left column */
+  .left {
+    grid-area: left;
+    border-radius: 20px;
+  }
+  
+  /* Style the middle column */
+  .middle {
+    grid-area: middle;
+    border-radius: 20px;
+  }
+  
+  /* Style the right column */
+  .right {
+    grid-area: right;
+    border-radius: 20px;
+  }
+  
+  /* Style the footer */
+  .footer {
+    grid-area: footer;
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    height: 8vh;
+    font-family: 'Poppins'; 
+    color: #232323; 
+    font-size: 1.0rem; 
+    text-align: left; 
+    line-height: 1.75; 
+    margin: 8px 8px;
+    align-items: right;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .grid-container  {
+      grid-template-areas: 
+        'header header header header header header' 
+        'left left left left left left' 
+        'middle middle middle middle middle middle' 
+        'right right right right right right' 
+        'footer footer footer footer footer footer';
+    }
+  }

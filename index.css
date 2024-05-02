@@ -97,7 +97,7 @@ header {
     font-family: Poppins;
     color: #252525;
   
-    cursor: none;
+    /* cursor: none; */
   }
   
   html, body {
@@ -263,15 +263,16 @@ footer {
   }
   
   /* CUSTOM CURSOR  */
-  .custom-cursor {
-    position: fixed;
-    width: 60px; /* Adjust as needed */
-    height: 50px; /* Adjust as needed */
-    background-image: url('Eyes.png'); /* Replace with your cursor image path */
-    background-size: cover;
-    z-index: 9999; /* Make sure it's above other elements */
-    pointer-events: none; /* Allow clicks to pass through */
-  }
+  /* CUSTOM CURSOR  */
+/* .custom-cursor {
+  position: fixed;
+  width: 60px;
+  height: 50px; 
+  background-image: url('Eyes.png'); 
+  background-size: cover;
+  z-index: 9999; 
+  pointer-events: none;
+} */
 
   /* HEADER, PARAGRAPH  */
 h1 {
