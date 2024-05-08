@@ -30,8 +30,9 @@ nav ul {
 /* LINE 24: Adjust the padding to make the navbar bigger */
 nav ul li {
   display: inline;
-  margin-right: 30px;
-  align-items: right;
+  margin-right: 40px;
+  align-items: center;
+  /* padding: 20px 10px; */
 }
 
 nav a {
@@ -208,8 +209,17 @@ h2 {
   text-align: left; 
   line-height: 1.25; 
   position: relative;
-  margin: 20px 50px 50px 50px;
-  /* padding: 30px 30px; */
+  margin: 10px 50px 10px 50px;
+}
+
+h3 {
+  font-family: 'Poppins'; 
+  color: #232323; 
+  font-size: 1.0rem; 
+  text-align: left; 
+  line-height: 1.25; 
+  position: relative;
+  margin: 10px 50px 10px 50px;
 }
 
 p {
@@ -219,7 +229,7 @@ p {
   text-align: left; 
   line-height: 1.75; 
   position: relative;
-  margin: 0px 50px 0px 50px;
+  margin: 10px 50px 10px 50px;
 }
 
 
@@ -303,7 +313,7 @@ footer {
 ------------------------------------*/
 .project-item {
   margin: 20px 30px;
-  /* padding: 30px 30px;  */
+  padding: 30px 30px; 
 }
 .project-item img {
   /* width: 300px; */
@@ -491,16 +501,7 @@ footer {
   margin: 0;
 }
 
-/* CUSTOM CURSOR  */
-/* .custom-cursor {
-  position: fixed;
-  width: 60px;
-  height: 50px; 
-  background-image: url('Eyes.png'); 
-  background-size: cover;
-  z-index: 9999; 
-  pointer-events: none;
-} */
+
 
 .design-container {
   display: flex;
@@ -508,14 +509,31 @@ footer {
   margin: 0px 30px 0px 30px;
   padding: 20px;
   position: relative;
-  justify-content: left;
-  align-items: left;
+  float: right;
+  justify-content: right;
   text-align: left;
   border-radius: 20px;
   line-height: 1.0;
   float: left;
   animation: Slide_Up 1.5s ease;
   max-width: 50%;
+  max-height: 100%;
+}
+
+.video-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 10px;
+
+  flex-direction: row;
+  margin: 30px 30px;
+  padding: 40px 40px;
+  position: relative;
+  text-align: left;
+  animation: Slide_Up 1.5s ease;
+  max-width: 100%;
   max-height: 100%;
 }
 
