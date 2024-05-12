@@ -105,26 +105,33 @@ header {
   }
   nav ul {
     list-style-type: none;
-    padding: 0px 0; 
-  }
-  /* LINE 24: Adjust the padding to make the navbar bigger */
-  nav ul li {
-    display: inline;
-    margin-right: 30px;
-    align-items: right;
+    padding: 0;
+    /* text-align: right;  */
+    display: flex; /* Use flexbox */
+    justify-content: flex-end;
   }
   
+  nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+  }
+
+  nav ul li:first-child {
+    margin-left: 0; 
+  }
+
   nav a {
     text-decoration: none;
     color: #232323;
     transition: color 0.3s;
-    font-size: 18px; /* Increase the font size if needed */
+    font-size: 18px; 
     font-family: 'Poppins';
   }
   
   nav a:hover {
     color: rgb(255, 30, 150);
   }
+  
 
   /* FLOATING EYES */
 .floating-image {
@@ -293,6 +300,18 @@ h1 {
     font-weight: 300; 
     color: #232323; 
     font-size: 2.0rem; 
+    text-align: center; 
+    line-height: 1.25; 
+    position: relative;
+    margin: 0px 50px 0px 50px;
+    padding: 30px 30px;
+  }
+
+  h3{
+    font-family: 'Poppins';
+    font-weight: 300; 
+    color: #232323; 
+    font-size: 1.5rem; 
     text-align: center; 
     line-height: 1.25; 
     position: relative;
